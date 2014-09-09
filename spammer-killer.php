@@ -2,7 +2,7 @@
 
 /**
 * Plugin Name: Spammer Killer
-* Plugin URI: http://github.com/aaronjamesyoung/ajy-spammer-killer
+* Plugin URI: http://github.com/aaronjamesyoung/spammer-killer
 * Description: Fights WordPress comment spam with a honeypot trap.
 * Version: 100000
 * Author: Aaron James Young
