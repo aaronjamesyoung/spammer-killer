@@ -14,6 +14,6 @@ This is your basic antispam honeytrap. You see, spambots tend to fill out every 
 
 ## That's it?
 
-Yep. And I'd say it's 99% effective. Remember that it won't stop real people writing spammy comments on your blog, but it's pretty good at getting the bulk of the spam.
+Yep. And I'd say it's 99% effective, although I have no real data to back me up on that. Do remember that it won't stop real people writing spammy comments on your blog, but it's pretty good at getting the bulk of the spam.
 
 Enjoy!
