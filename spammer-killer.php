@@ -4,7 +4,7 @@
 * Plugin Name: Spammer Killer
 * Plugin URI: http://github.com/aaronjamesyoung/spammer-killer
 * Description: Fights WordPress comment spam with a honeypot trap.
-* Version: 100000
+* Version: 100001
 * Author: Aaron James Young
 * Author URI: http://ajy.co
 * License: GPL3
@@ -27,10 +27,12 @@ function ajy_spam_field()
 }
 
 // Kill the submission if the bot filled out the honeypot
+add_filter('preprocess_comment', 'ajy_new_comment');
 function ajy_new_comment($commentdata) {
   if($_POST['ajy_extra_field'] != "") {
     die('You are spam');
   }
   return $commentdata;
 }
-add_filter('preprocess_comment', 'ajy_new_comment');
+
+//todo: make automatic updates work or host it in the WP.org repository

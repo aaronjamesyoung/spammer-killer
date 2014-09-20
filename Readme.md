@@ -17,3 +17,20 @@ This is your basic antispam honeytrap. You see, spambots tend to fill out every 
 Yep. And I'd say it's 99% effective, although I have no real data to back me up on that. Do remember that it won't stop real people writing spammy comments on your blog, but it's pretty good at getting the bulk of the spam.
 
 Enjoy!
+
+## Questions
+
+### I've activated the plugin and the hidden field doesn't get inserted to my comment form.
+
+First, make sure that you've checked the source or in your web inspector and verified that the field
+isn't in your comment form. It should be called "ajy-extra-field", so you can search for that.
+
+Sometimes this happens because a theme might implement their own comment form code, which could skip
+the action hooks I'm using to insert the hidden field. In this case, here's what I'd recommend:
+
+* Find where your theme has implemented the comment form
+* Use the HTML code from `function ajy_spam_field()` to manually add the field to your comment form.
+* Go ahead and activate the plugin, since the function to kill the spam submission will take effect
+anyway
+
+This should do the trick for you.
